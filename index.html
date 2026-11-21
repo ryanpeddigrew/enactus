@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enactus TMU — Strategic Growth, Sponsorship & Impact Proposal | Concept Designed by Emilie Faul</title>
+  <meta name="description" content="Strategic growth, tiered corporate sponsorship, and measurable impact roadmap for Enactus TMU. Concept designed by Emilie Faul, VP of Marketing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      /* Official Enactus & TMU Brand Palette */
+      --enactus-gold: #FFC222;
+      --enactus-gold-dark: #D99B00;
+      --enactus-gold-soft: #FFF7DF;
+      --tmu-blue: #004C9B;
+      --tmu-blue-dark: #00356E;
+      --tmu-blue-soft: #EBF3FC;
+      --obsidian: #111317;
+      --charcoal: #1C2026;
+      --slate: #475569;
+      --muted: #64748B;
+      --bg: #F7F8FA;
+      --surface: #FFFFFF;
+      --border: #E2E6EC;
+      --success: #0F766E;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --shadow-sm: 0 4px 16px -4px rgba(17, 19, 23, 0.06);
+      --shadow-md: 0 16px 40px -16px rgba(17, 19, 23, 0.12);
+      --shadow-lg: 0 24px 60px -20px rgba(17, 19, 23, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--obsidian);
+      line-height: 1.65;
+      overflow-x: hidden;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+      letter-spacing: -0.025em;
+    }
+
+    a {
+      color: var(--tmu-blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Full-Page Persistent Emilie Faul Watermark */
+    .watermark-layer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='380' height='240' viewBox='0 0 380 240'%3E%3Cg transform='rotate(-24 190 120)'%3E%3Ctext x='50%25' y='44%25' dominant-baseline='middle' text-anchor='middle' fill='%23111317' fill-opacity='0.045' font-family='Inter, Arial, sans-serif' font-weight='800' font-size='18' letter-spacing='4'%3EEMILIE FAUL%3C/text%3E%3Ctext x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' fill='%23111317' fill-opacity='0.035' font-family='Inter, Arial, sans-serif' font-weight='600' font-size='10' letter-spacing='2.5'%3ECONCEPT DESIGNED BY EMILIE FAUL%3C/text%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+    }
+
+    /* Reading Progress Bar */
+    .progress-track {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: rgba(17, 19, 23, 0.08);
+      z-index: 200;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--enactus-gold) 0%, var(--tmu-blue) 100%);
+      transition: width 0.1s linear;
+    }
+
+    /* Sticky Header with Real Enactus TMU Logo */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 150;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      text-decoration: none;
+    }
+
+    .brand-lockup:hover {
+      text-decoration: none;
+    }
+
+    .brand-logo-img {
+      height: 38px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .brand-divider {
+      width: 1px;
+      height: 28px;
+      background: var(--border);
+    }
+
+    .brand-meta strong {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: var(--obsidian);
+      line-height: 1.2;
+    }
+
+    .brand-meta span {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.35rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--slate);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: color 0.18s ease;
+    }
+
+    nav a:hover {
+      color: var(--tmu-blue);
+      text-decoration: none;
+    }
+
+    .author-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--enactus-gold-soft);
+      color: var(--obsidian);
+      border: 1px solid rgba(217, 155, 0, 0.35);
+      padding: 0.38rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .author-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--enactus-gold-dark);
+    }
+
+    /* Main Layout */
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 2.25rem 1.5rem 4.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--obsidian) 0%, #192231 62%, var(--tmu-blue-dark) 100%);
+      color: #FFFFFF;
+      border-radius: 24px;
+      padding: 3.4rem 3rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 2.75rem;
+      border-bottom: 5px solid var(--enactus-gold);
+    }
+
+    .hero::after {
+      content: "EMILIE FAUL";
+      position: absolute;
+      right: -12px;
+      bottom: -24px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: clamp(4rem, 9vw, 7.5rem);
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.035);
+      letter-spacing: 6px;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .hero-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-logos {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-logo-img {
+      height: 44px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .hero-logo-secondary {
+      height: 32px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+      opacity: 0.92;
+    }
+
+    .hero-logo-sep {
+      width: 1px;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 194, 34, 0.14);
+      color: var(--enactus-gold);
+      border: 1px solid rgba(255, 194, 34, 0.35);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.05rem, 4.2vw, 3.25rem);
+      line-height: 1.12;
+      font-weight: 800;
+      max-width: 840px;
+      margin-bottom: 1.35rem;
+    }
+
+    .hero h1 .gold-text {
+      color: var(--enactus-gold);
+    }
+
+    .hero-note {
+      background: rgba(255, 255, 255, 0.07);
+      border-left: 4px solid var(--enactus-gold);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 14px 14px 0;
+      max-width: 820px;
+      margin-bottom: 2rem;
+      font-size: 1.02rem;
+      color: #E5E9F0;
+    }
+
+    .hero-note strong {
+      color: #FFFFFF;
+    }
+
+    .hero-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      padding-top: 1.35rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-meta-item small {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      color: #94A3B8;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .hero-meta-item span {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      margin-top: 1.75rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.78rem 1.35rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.18s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .btn-gold {
+      background: var(--enactus-gold);
+      color: var(--obsidian);
+    }
+
+    .btn-gold:hover {
+      background: #FFCE47;
+    }
+
+    .btn-outline-light {
+      background: rgba(255, 255, 255, 0.08);
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.24);
+    }
+
+    .btn-outline-light:hover {
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    /* Verified Track Record Strip */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3.75rem;
+    }
+
+    .kpi-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--enactus-gold);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .kpi-value {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--obsidian);
+      line-height: 1.1;
+      margin-bottom: 0.35rem;
+    }
+
+    .kpi-label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--tmu-blue);
+      margin-bottom: 0.35rem;
+    }
+
+    .kpi-desc {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    .kpi-desc a {
+      font-weight: 600;
+    }
+
+    /* Section Headers */
+    section {
+      margin-bottom: 4rem;
+      scroll-margin-top: 90px;
+    }
+
+    .section-header {
+      margin-bottom: 1.75rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--tmu-blue);
+      background: var(--tmu-blue-soft);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      margin-bottom: 0.55rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      font-weight: 800;
+      color: var(--obsidian);
+      margin-bottom: 0.45rem;
+    }
+
+    .section-header p {
+      color: var(--slate);
+      max-width: 760px;
+      font-size: 1rem;
+    }
+
+    /* Flagship Ventures Portfolio (Real Enactus TMU Ventures) */
+    .ventures-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .venture-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.6rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .venture-card:hover {
+      border-color: var(--enactus-gold-dark);
+      transform: translateY(-2px);
+    }
+
+    .venture-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .venture-logo-img {
+      height: 32px;
+      max-width: 130px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .venture-pill {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: var(--enactus-gold-soft);
+      color: var(--obsidian);
+      border: 1px solid rgba(217, 155, 0, 0.28);
+    }
+
+    .venture-card h3 {
+      font-size: 1.18rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: var(--obsidian);
+    }
+
+    .venture-card p {
+      font-size: 0.9rem;
+      color: var(--slate);
+      margin-bottom: 1.15rem;
+    }
+
+    .venture-stat {
+      border-top: 1px solid var(--border);
+      padding-top: 0.85rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--tmu-blue);
+    }
+
+    /* Interactive Strategic Pillar Tabs */
+    .tabs-bar {
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.4rem;
+    }
+
+    .tab-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--slate);
+      padding: 0.82rem 1.25rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .tab-btn:hover {
+      border-color: var(--obsidian);
+      color: var(--obsidian);
+    }
+
+    .tab-btn.active {
+      background: var(--obsidian);
+      color: var(--enactus-gold);
+      border-color: var(--obsidian);
+      box-shadow: 0 8px 20px rgba(17, 19, 23, 0.16);
+    }
+
+    .pillar-panel {
+      display: none;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-md);
+      animation: fadeUp 0.22s ease;
+    }
+
+    .pillar-panel.active {
+      display: grid;
+      grid-template-columns: 1.25fr 0.95fr;
+      gap: 2.2rem;
+      align-items: start;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .pillar-panel h3 {
+      font-size: 1.45rem;
+      margin-bottom: 0.7rem;
+      color: var(--obsidian);
+    }
+
+    .pillar-panel > div > p {
+      color: var(--slate);
+      margin-bottom: 1.35rem;
+      font-size: 0.96rem;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 1.75rem;
+      font-size: 0.93rem;
+      color: var(--charcoal);
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--tmu-blue);
+      font-weight: 900;
+      font-size: 1rem;
+    }
+
+    .outcome-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--enactus-gold);
+      border-radius: var(--radius-md);
+      padding: 1.55rem;
+    }
+
+    .outcome-card h4 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .outcome-row {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .outcome-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .outcome-row strong {
+      display: block;
+      font-size: 0.94rem;
+      color: var(--obsidian);
+      margin-bottom: 0.2rem;
+    }
+
+    .outcome-row span {
+      font-size: 0.84rem;
+      color: var(--slate);
+    }
+
+    /* Sponsorship Tier Table + Live Estimator */
+    .estimator-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 2.2rem;
+      align-items: start;
+    }
+
+    .preset-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+
+    .preset-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--muted);
+      margin-right: 0.3rem;
+    }
+
+    .preset-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--obsidian);
+      padding: 0.42rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .preset-btn:hover,
+    .preset-btn.active {
+      background: var(--tmu-blue);
+      color: #FFFFFF;
+      border-color: var(--tmu-blue);
+    }
+
+    .tier-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.65rem 1.25rem;
+      padding: 1.05rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+    }
+
+    .tier-row:last-child {
+      border-bottom: none;
+    }
+
+    .tier-info strong {
+      display: block;
+      font-size: 0.98rem;
+      color: var(--obsidian);
+      margin-bottom: 0.15rem;
+    }
+
+    .tier-info span {
+      display: block;
+      font-size: 0.84rem;
+      color: var(--slate);
+      margin-bottom: 0.25rem;
+    }
+
+    .tier-profile {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--tmu-blue);
+    }
+
+    .tier-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .qty-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--obsidian);
+      font-weight: 800;
+      font-size: 1rem;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: all 0.15s ease;
+    }
+
+    .qty-btn:hover {
+      background: var(--enactus-gold-soft);
+      border-color: var(--enactus-gold-dark);
+    }
+
+    .qty-val {
+      min-width: 26px;
+      text-align: center;
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .estimator-summary {
+      background: var(--obsidian);
+      color: #FFFFFF;
+      border-radius: 16px;
+      padding: 1.9rem;
+      border-top: 4px solid var(--enactus-gold);
+    }
+
+    .estimator-summary .label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #94A3B8;
+      font-weight: 700;
+      margin-bottom: 0.45rem;
+    }
+
+    .total-amount {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 2.65rem;
+      font-weight: 800;
+      color: var(--enactus-gold);
+      line-height: 1.05;
+      margin-bottom: 0.55rem;
+    }
+
+    .summary-sub {
+      font-size: 0.88rem;
+      color: #CBD5E1;
+      margin-bottom: 1.35rem;
+    }
+
+    .summary-breakdown {
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      padding-top: 1rem;
+      display: grid;
+      gap: 0.55rem;
+      font-size: 0.85rem;
+      color: #E2E8F0;
+    }
+
+    .summary-breakdown div {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .summary-note {
+      margin-top: 1.2rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.78rem;
+      color: #94A3B8;
+      line-height: 1.5;
+    }
+
+    /* Interactive 90-Day Roadmap */
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.35rem;
+    }
+
+    .phase-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--obsidian);
+      border-radius: var(--radius-md);
+      padding: 1.7rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .phase-card.highlight {
+      border-top-color: var(--enactus-gold);
+    }
+
+    .phase-card.blue-top {
+      border-top-color: var(--tmu-blue);
+    }
+
+    .phase-tag {
+      display: block;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      color: var(--tmu-blue);
+      margin-bottom: 0.35rem;
+    }
+
+    .phase-card h3 {
+      font-size: 1.18rem;
+      margin-bottom: 0.45rem;
+      color: var(--obsidian);
+    }
+
+    .phase-outcome {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .roadmap-checklist {
+      list-style: none;
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .roadmap-checklist label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.89rem;
+      color: var(--charcoal);
+      cursor: pointer;
+    }
+
+    .roadmap-checklist input[type="checkbox"] {
+      margin-top: 0.25rem;
+      accent-color: var(--tmu-blue);
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .roadmap-checklist input:checked + span {
+      text-decoration: line-through;
+      color: var(--muted);
+    }
+
+    /* Leadership Alignment CTA */
+    .cta-box {
+      background: linear-gradient(135deg, #FFFDF5 0%, var(--enactus-gold-soft) 100%);
+      border: 1px solid rgba(217, 155, 0, 0.32);
+      border-radius: var(--radius-lg);
+      padding: 2.35rem;
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .cta-box h2 {
+      font-size: 1.65rem;
+      color: var(--obsidian);
+      margin-bottom: 0.65rem;
+    }
+
+    .cta-box p {
+      color: var(--charcoal);
+      font-size: 0.96rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .copy-btn {
+      background: var(--obsidian);
+      color: var(--enactus-gold);
+      border: none;
+      padding: 0.72rem 1.2rem;
+      border-radius: 10px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.15s ease;
+    }
+
+    .copy-btn:hover {
+      opacity: 0.92;
+    }
+
+    .ask-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.65rem;
+      border: 1px solid rgba(217, 155, 0, 0.25);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .ask-card h4 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      color: var(--tmu-blue);
+      margin-bottom: 0.85rem;
+    }
+
+    .ask-card ol {
+      padding-left: 1.2rem;
+      display: grid;
+      gap: 0.65rem;
+      font-size: 0.9rem;
+      color: var(--obsidian);
+      font-weight: 600;
+    }
+
+    /* Official Attribution Footer */
+    footer {
+      background: var(--obsidian);
+      color: #FFFFFF;
+      border-top: 4px solid var(--enactus-gold);
+      padding: 2.25rem 1.5rem;
+      margin-top: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 1.15rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-enactus-logo {
+      height: 34px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .footer-concept strong {
+      display: block;
+      font-size: 0.98rem;
+      color: #FFFFFF;
+      font-weight: 800;
+    }
+
+    .footer-concept span {
+      display: block;
+      font-size: 0.8rem;
+      color: #94A3B8;
+    }
+
+    .powered-by-chairlift {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      color: #CBD5E1;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.18s ease;
+    }
+
+    .powered-by-chairlift:hover {
+      background: rgba(255, 255, 255, 0.12);
+      text-decoration: none;
+    }
+
+    .chairlift-logo-img {
+      height: 20px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    @media (max-width: 880px) {
+      .pillar-panel.active,
+      .estimator-card,
+      .cta-box {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding: 2.25rem 1.5rem;
+      }
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full-Page Persistent Watermark -->
+  <div class="watermark-layer" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="progress-track" aria-hidden="true">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+
+  <!-- Top Navigation -->
+  <header>
+    <div class="nav-inner">
+      <a class="brand-lockup" href="https://www.enactustmu.com/" target="_blank" rel="noopener noreferrer">
+        <!-- Real Enactus TMU Primary Logo (place in ./assets/enactus-tmu-logo.png) -->
+        <img
+          src="./assets/enactus-tmu-logo.png"
+          alt="Enactus TMU Logo"
+          class="brand-logo-img"
+        />
+        <span class="brand-divider" aria-hidden="true"></span>
+        <div class="brand-meta">
+          <strong>Strategic Growth &amp; Sponsorship</strong>
+          <span>Executive Leadership Walkthrough</span>
+        </div>
+      </a>
+
+      <nav aria-label="Proposal Sections">
+        <a href="#ventures">Our Ventures</a>
+        <a href="#pillars">Growth Pillars</a>
+        <a href="#sponsorship">Sponsorship Model</a>
+        <a href="#roadmap">90-Day Roadmap</a>
+        <a href="#alignment">Next Steps</a>
+      </nav>
+
+      <div class="author-badge">
+        <span class="author-dot" aria-hidden="true"></span>
+        Concept Designed by Emilie Faul
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-top-row">
+        <div class="hero-logos">
+          <!-- Real Enactus TMU White/Light Lockup (place in ./assets/enactus-tmu-logo-white.png) -->
+          <img
+            src="./assets/enactus-tmu-logo-white.png"
+            alt="Enactus TMU"
+            class="hero-logo-img"
+          />
+          <span class="hero-logo-sep" aria-hidden="true"></span>
+          <!-- Real TMUEI / Ted Rogers School of Management Logo (place in ./assets/tmuei-logo-white.png) -->
+          <img
+            src="./assets/tmuei-logo-white.png"
+            alt="Toronto Met Entrepreneur Institute"
+            class="hero-logo-secondary"
+          />
+        </div>
+        <span class="hero-eyebrow">Enactus TMU &bull; Executive Board &amp; TMUEI Review</span>
+      </div>
+
+      <h1>
+        Turning Enactus TMU&rsquo;s Track Record Into a
+        <span class="gold-text">Self-Sustaining Sponsorship &amp; Growth Engine</span>
+      </h1>
+
+      <div class="hero-note">
+        <strong>A note from me:</strong> Alongside leading our marketing operations as VP of Marketing at Enactus TMU, I&rsquo;ve been building out a practical roadmap for how we can expand our cross-campus talent pipeline, shift to tiered annual corporate partnerships, and package our venture impact for sponsors and national judges. I put this interactive walkthrough together so you can explore the concept at your own pace before we align on Phase 1.
+      </div>
+
+      <div class="hero-meta-grid">
+        <div class="hero-meta-item">
+          <small>Concept Designed &amp; Authored By</small>
+          <span>Emilie Faul &mdash; VP of Marketing, Enactus TMU</span>
+        </div>
+        <div class="hero-meta-item">
+          <small>Prepared For</small>
+          <span>Enactus TMU Executive Board &amp; TMUEI Leadership</span>
+        </div>
+        <div class="hero-meta-item">
+          <small>Core Mandate</small>
+          <span>People, Planet &amp; Profit &bull; Operating Since 1987</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#pillars" class="btn btn-gold">Walk Through the 3 Pillars</a>
+        <a href="#sponsorship" class="btn btn-outline-light">Explore Sponsorship Scenarios</a>
+      </div>
+    </section>
+
+    <!-- Verified Enactus TMU Foundation Metrics -->
+    <div class="kpi-grid" aria-label="Verified Enactus TMU Track Record">
+      <div class="kpi-card">
+        <div class="kpi-value">Since 1987</div>
+        <div class="kpi-label">Student Venture Incubator</div>
+        <div class="kpi-desc">
+          Student-owned and student-operated social ventures built on People, Planet, and Profit (<a href="https://www.enactustmu.com/about" target="_blank" rel="noopener noreferrer">enactustmu.com/about</a>).
+        </div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-value">50+ Titles</div>
+        <div class="kpi-label">Regional &amp; National Championships</div>
+        <div class="kpi-desc">
+          Decades of competitive excellence backed by <a href="https://www.torontomu.ca/rei/about/" target="_blank" rel="noopener noreferrer">Toronto Met Entrepreneur Institute (TMUEI)</a>.
+        </div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-value">Top 4</div>
+        <div class="kpi-label">Canada&rsquo;s Social Innovators (2024)</div>
+        <div class="kpi-desc">
+          National recognition at the 2024 Enactus Canada National Exposition (<a href="https://report2024.tedrogersschool.ca/awards/" target="_blank" rel="noopener noreferrer">TRSM 2024 Report</a>).
+        </div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-value">4,000+</div>
+        <div class="kpi-label">BITS Workshop Attendees</div>
+        <div class="kpi-desc">
+          TMU&rsquo;s largest financial literacy program across 49 targeted workshops (<a href="https://www.enactustmu.com/startups" target="_blank" rel="noopener noreferrer">Enactus TMU Startups</a>).
+        </div>
+      </div>
+    </div>
+
+    <!-- Real Enactus TMU Flagship Venture Portfolio -->
+    <section id="ventures">
+      <div class="section-header">
+        <span class="section-tag">01 / Verified Venture Portfolio</span>
+        <h2>The Assets We Already Have to Pitch Corporate Partners</h2>
+        <p>
+          Sponsors don&rsquo;t buy abstract promises&mdash;they back proven student ventures with real community outcomes. Our current portfolio on <a href="https://www.enactustmu.com/startups" target="_blank" rel="noopener noreferrer">enactustmu.com/startups</a> gives us four high-credibility sponsorship verticals right now.
+        </p>
+      </div>
+
+      <div class="ventures-grid">
+        <article class="venture-card">
+          <div>
+            <div class="venture-top">
+              <img src="./assets/venture-terra-plast.png" alt="Terra-Plast Logo" class="venture-logo-img" />
+              <span class="venture-pill">Sustainability</span>
+            </div>
+            <h3>Terra-Plast &amp; The Good Pod</h3>
+            <p>
+              A bio-plastic alternative derived from potato starch with its B2C proof-of-concept, <strong>The Good Pod</strong>&mdash;a direct fit for ESG and packaging sponsors.
+            </p>
+          </div>
+          <div class="venture-stat">
+            2024 Runner-Up &bull; Canadian Tire Corp. Environmental Sustainability Challenge
+          </div>
+        </article>
+
+        <article class="venture-card">
+          <div>
+            <div class="venture-top">
+              <img src="./assets/venture-bits.png" alt="BITS Logo" class="venture-logo-img" />
+              <span class="venture-pill">Financial Literacy</span>
+            </div>
+            <h3>BITS</h3>
+            <p>
+              TMU&rsquo;s largest financial literacy program, delivering <strong>49 targeted workshops</strong> to <strong>4,000+ attendees</strong>&mdash;built for national bank and fintech backing.
+            </p>
+          </div>
+          <div class="venture-stat">
+            2024 Regional Champion &bull; Desjardins Youth Empowerment Challenge
+          </div>
+        </article>
+
+        <article class="venture-card">
+          <div>
+            <div class="venture-top">
+              <img src="./assets/venture-smu.png" alt="SMU Logo" class="venture-logo-img" />
+              <span class="venture-pill">Venture Capital</span>
+            </div>
+            <h3>SMU</h3>
+            <p>
+              Host of <strong>65+ community events</strong> and a flagship venture competition awarding <strong>two $25,000 prizes</strong> directly to TRSM student founders.
+            </p>
+          </div>
+          <div class="venture-stat">
+            65+ Events Hosted &bull; $50,000 Awarded to Student Founders
+          </div>
+        </article>
+
+        <article class="venture-card">
+          <div>
+            <div class="venture-top">
+              <img src="./assets/venture-traits.png" alt="Traits Toronto Logo" class="venture-logo-img" />
+              <span class="venture-pill">Creative Community</span>
+            </div>
+            <h3>Traits Toronto</h3>
+            <p>
+              An artistic social venture supporting <strong>40+ local Toronto creators</strong> while generating over <strong>1,000 community engagement hours</strong>.
+            </p>
+          </div>
+          <div class="venture-stat">
+            40+ Local Creators Supported &bull; 1,000+ Engagement Hours
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 Strategic Growth Pillars -->
+    <section id="pillars">
+      <div class="section-header">
+        <span class="section-tag">02 / Strategic Growth Blueprint</span>
+        <h2>Three Pillars to Scale Reach, Sponsorship &amp; Competition Impact</h2>
+        <p>
+          Select each pillar to walk through how we can layer structured recruiting, recurring corporate funding, and real-time impact measurement onto our existing Enactus TMU operations.
+        </p>
+      </div>
+
+      <div class="tabs-bar" role="tablist" aria-label="Strategic Growth Pillars">
+        <button class="tab-btn active" role="tab" aria-selected="true" onclick="switchPillar(0, this)">
+          Pillar 1: Cross-Campus Talent Pipeline
+        </button>
+        <button class="tab-btn" role="tab" aria-selected="false" onclick="switchPillar(1, this)">
+          Pillar 2: Corporate Sponsorship Engine
+        </button>
+        <button class="tab-btn" role="tab" aria-selected="false" onclick="switchPillar(2, this)">
+          Pillar 3: Impact Dashboard &amp; EXPO
+        </button>
+      </div>
+
+      <!-- Pillar 1 -->
+      <div class="pillar-panel active" id="pillar-0" role="tabpanel">
+        <div>
+          <h3>Program Growth &amp; Cross-Faculty Talent Pipeline</h3>
+          <p>
+            Scaling real ventures requires multidisciplinary builders from day one. Expanding intentionally beyond the Ted Rogers School of Management turns Enactus TMU into a true campus-wide venture engine.
+          </p>
+          <ul class="check-list">
+            <li><strong>Cross-Faculty Recruiting Engine:</strong> Recruit technical builders and materials researchers from Engineering &amp; Science for ventures like Terra-Plast; storytellers and UX designers from The Creative School; and domain operators from Community Services and TRSM.</li>
+            <li><strong>Structured Member-to-Founder Venture Sprint:</strong> A semester-based sprint transitioning new members into venture leads, integrated directly with TMU credit courses (<strong>ENT 401, ENT 727, BUS 720</strong>) and <a href="https://www.torontomu.ca/rei/students/" target="_blank" rel="noopener noreferrer">TMUEI incubation &amp; legal clinics</a>.</li>
+            <li><strong>Video-First Founder Storytelling:</strong> Pivot marketing toward high-production short-form documentary reels spotlighting real student founders inside Terra-Plast, BITS, SMU, and Traits Toronto ahead of every recruitment cycle.</li>
+          </ul>
+        </div>
+        <div class="outcome-card">
+          <h4>Leadership Outcomes</h4>
+          <div class="outcome-row">
+            <strong>Stronger Technical &amp; Creative Bench</strong>
+            <span>Ventures gain dedicated product, design, and research talent rather than relying solely on business students.</span>
+          </div>
+          <div class="outcome-row">
+            <strong>Higher Member Retention</strong>
+            <span>Academic credit integration and TMUEI support keep top students committed across multiple terms.</span>
+          </div>
+          <div class="outcome-row">
+            <strong>Higher-Intent Applications</strong>
+            <span>Documentary founder reels show real community impact before applications even open.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 2 -->
+      <div class="pillar-panel" id="pillar-1" role="tabpanel">
+        <div>
+          <h3>Tiered Annual Sponsorship &amp; Warm-Intro Pipeline</h3>
+          <p>
+            Instead of ad-hoc event fundraising, we package our chapter around <strong>Tiered Annual Impact Partnerships</strong> aligned with corporate CSR, ESG reporting, and early-career recruiting&mdash;mirroring the national value proposition at <a href="https://enactus.ca/partner-with-us/" target="_blank" rel="noopener noreferrer">Enactus Canada</a>.
+          </p>
+          <ul class="check-list">
+            <li><strong>Four Clear Annual Tiers:</strong> Title Impact Partner, Venture Growth Sponsor, Competition &amp; Exposition Partner, and Community &amp; In-Kind Partner&mdash;each with defined deliverables and executive visibility.</li>
+            <li><strong>Live Digital Partner Prospectus:</strong> Replace static PDF decks with an interactive web portal featuring verified venture KPIs, tier breakdowns, and direct calendar booking for partner calls.</li>
+            <li><strong>Alumni &amp; Advisory Board Warm Intros:</strong> Activate Enactus TMU alumni, faculty advisors, and TMUEI leaders to open direct doors with corporate CSR directors, ESG leads, and campus recruiting teams.</li>
+          </ul>
+        </div>
+        <div class="outcome-card">
+          <h4>Leadership Outcomes</h4>
+          <div class="outcome-row">
+            <strong>Recurring Multi-Year Revenue</strong>
+            <span>Annual impact packages stabilize venture grants and <a href="https://enactus.ca/support/" target="_blank" rel="noopener noreferrer">National Exposition</a> travel budgets.</span>
+          </div>
+          <div class="outcome-row">
+            <strong>Built-In Sponsor ROI</strong>
+            <span>Quarterly impact reports and video case studies give partners ready-to-share proof for internal leadership.</span>
+          </div>
+          <div class="outcome-row">
+            <strong>Faster Executive Close Rates</strong>
+            <span>Warm alumni introductions paired with a live digital prospectus shorten sponsor decision cycles.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 3 -->
+      <div class="pillar-panel" id="pillar-2" role="tabpanel">
+        <div>
+          <h3>Unified Triple-Bottom-Line Impact &amp; Flagship EXPO</h3>
+          <p>
+            Standardized monthly measurement serves double duty: instant sponsor validation and year-round readiness for Regional and National Enactus competition audits.
+          </p>
+          <ul class="check-list">
+            <li><strong>Central Monthly Impact Tracker:</strong> Log direct and indirect beneficiaries, workshop and community hours, venture revenue reinvested, and environmental metrics (such as plastic diverted via Terra-Plast).</li>
+            <li><strong>Elevated Enactus TMU EXPO Demo Day:</strong> Transform the annual <a href="https://www.tickettailor.com/events/enactustorontometopolitanuniversity/2025657" target="_blank" rel="noopener noreferrer">Enactus TMU EXPO</a> into a premier sponsor-attended showcase with live pitches, partner networking booths, and produced recap films.</li>
+            <li><strong>Quarterly Sponsor-Judged Mock Pitches:</strong> Integrate corporate partners and alumni directly into our competition prep cycles to stress-test financials and build on our Top 4 national finish.</li>
+          </ul>
+        </div>
+        <div class="outcome-card">
+          <h4>Leadership Outcomes</h4>
+          <div class="outcome-row">
+            <strong>Audit-Ready Competition Data</strong>
+            <span>Eliminates last-minute data scrambles before Regional and National Expositions.</span>
+          </div>
+          <div class="outcome-row">
+            <strong>Flagship Partner Experience</strong>
+            <span>Turns EXPO into the headline annual renewal moment for corporate sponsors and TMU leadership.</span>
+          </div>
+          <div class="outcome-row">
+            <strong>Stronger Institutional Profile</strong>
+            <span>Cements Enactus TMU as Canada&rsquo;s premier student social startup incubator.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Sponsorship Tier Model -->
+    <section id="sponsorship">
+      <div class="section-header">
+        <span class="section-tag">03 / Sponsorship Architecture</span>
+        <h2>Tiered Corporate Partnership Model &amp; Revenue Planner</h2>
+        <p>
+          Model how moving from one-off event asks to structured annual tiers funds venture grants, campus programming, and Enactus Canada National Exposition travel. Adjust partner counts below or choose a scenario preset.
+        </p>
+      </div>
+
+      <div class="estimator-card">
+        <div>
+          <div class="preset-bar">
+            <span class="preset-label">Scenarios:</span>
+            <button class="preset-btn" onclick="applyPreset('pilot', this)">Conservative Pilot</button>
+            <button class="preset-btn active" onclick="applyPreset('target', this)">Year 1 Target</button>
+            <button class="preset-btn" onclick="applyPreset('scale', this)">Full Scale</button>
+          </div>
+
+          <div class="tier-row">
+            <div class="tier-info">
+              <strong>Title Impact Partner &mdash; $10,000 / yr</strong>
+              <span>Co-branded EXPO Demo Day, executive judging seats, priority campus recruiting access, quarterly impact report &amp; video case study.</span>
+              <div class="tier-profile">Ideal Fit: National banks, consulting firms, enterprise tech</div>
+            </div>
+            <div class="tier-controls">
+              <button class="qty-btn" aria-label="Decrease Title Impact Partners" onclick="updateTier('title', -1)">&minus;</button>
+              <span class="qty-val" id="qty-title">1</span>
+              <button class="qty-btn" aria-label="Increase Title Impact Partners" onclick="updateTier('title', 1)">+</button>
+            </div>
+          </div>
+
+          <div class="tier-row">
+            <div class="tier-info">
+              <strong>Venture Growth Sponsor &mdash; $5,000 / yr</strong>
+              <span>Direct backing for a flagship venture (Terra-Plast, BITS, SMU, Traits Toronto), co-branded workshops/pilots, and direct vertical impact metrics.</span>
+              <div class="tier-profile">Ideal Fit: Sustainability, fintech, CPG &amp; media brands</div>
+            </div>
+            <div class="tier-controls">
+              <button class="qty-btn" aria-label="Decrease Venture Growth Sponsors" onclick="updateTier('venture', -1)">&minus;</button>
+              <span class="qty-val" id="qty-venture">3</span>
+              <button class="qty-btn" aria-label="Increase Venture Growth Sponsors" onclick="updateTier('venture', 1)">+</button>
+            </div>
+          </div>
+
+          <div class="tier-row">
+            <div class="tier-info">
+              <strong>Competition &amp; Exposition Partner &mdash; $2,500 / yr</strong>
+              <span>Funds Regional &amp; Enactus Canada National Exposition travel and pitch production; includes mock-pitch judging seat &amp; national spotlight recap.</span>
+              <div class="tier-profile">Ideal Fit: Corporate alumni employers, business associations</div>
+            </div>
+            <div class="tier-controls">
+              <button class="qty-btn" aria-label="Decrease Competition Partners" onclick="updateTier('competition', -1)">&minus;</button>
+              <span class="qty-val" id="qty-competition">3</span>
+              <button class="qty-btn" aria-label="Increase Competition Partners" onclick="updateTier('competition', 1)">+</button>
+            </div>
+          </div>
+
+          <div class="tier-row">
+            <div class="tier-info">
+              <strong>Community &amp; In-Kind Partner &mdash; $1,000 value</strong>
+              <span>Operational leverage (venue, video/AV, legal, printing, software credits) with brand recognition across digital channels and event signage.</span>
+              <div class="tier-profile">Ideal Fit: Local Toronto businesses, agencies, campus vendors</div>
+            </div>
+            <div class="tier-controls">
+              <button class="qty-btn" aria-label="Decrease Community Partners" onclick="updateTier('community', -1)">&minus;</button>
+              <span class="qty-val" id="qty-community">5</span>
+              <button class="qty-btn" aria-label="Increase Community Partners" onclick="updateTier('community', 1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="estimator-summary" aria-live="polite">
+          <div class="label">Modeled Annual Partnership Value</div>
+          <div class="total-amount" id="total-funding">$37,500</div>
+          <div class="summary-sub" id="partner-count">12 Active Partners (7 Cash + 5 Community/In-Kind)</div>
+
+          <div class="summary-breakdown">
+            <div><span>Title Impact Partners</span><strong id="sub-title">$10,000</strong></div>
+            <div><span>Venture Growth Sponsors</span><strong id="sub-venture">$15,000</strong></div>
+            <div><span>Competition &amp; Expo Partners</span><strong id="sub-competition">$7,500</strong></div>
+            <div><span>Community &amp; In-Kind Value</span><strong id="sub-community">$5,000</strong></div>
+          </div>
+
+          <div class="summary-note">
+            Planning model only&mdash;tier pricing is configurable with the Executive Board and TMUEI before launching external partner outreach.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Checkable 90-Day Implementation Roadmap -->
+    <section id="roadmap">
+      <div class="section-header">
+        <span class="section-tag">04 / Phased Execution</span>
+        <h2>90-Day Implementation Roadmap</h2>
+        <p>
+          A low-friction rollout designed to fit cleanly alongside our active Enactus TMU calendar. Check items off during our alignment review to track Phase 1 readiness.
+        </p>
+      </div>
+
+      <div class="roadmap-grid">
+        <div class="phase-card">
+          <span class="phase-tag">Phase 1 &bull; Days 1&ndash;30</span>
+          <h3>Foundation &amp; Packaging</h3>
+          <div class="phase-outcome">Target: Ready-to-pitch partner package &amp; aligned executive team</div>
+          <ul class="roadmap-checklist">
+            <li><label><input type="checkbox" /><span>Finalize tiered sponsorship menu and deliverables with Executive Board &amp; TMUEI.</span></label></li>
+            <li><label><input type="checkbox" /><span>Deploy unified monthly Triple-Bottom-Line Impact Metric template across ventures.</span></label></li>
+            <li><label><input type="checkbox" /><span>Build CRM of top 30 target corporate partners mapped to alumni warm intros.</span></label></li>
+          </ul>
+        </div>
+
+        <div class="phase-card highlight">
+          <span class="phase-tag">Phase 2 &bull; Days 31&ndash;60</span>
+          <h3>Outreach &amp; Campus Activation</h3>
+          <div class="phase-outcome">Target: Active sponsor pipeline &amp; cross-faculty member intake</div>
+          <ul class="roadmap-checklist">
+            <li><label><input type="checkbox" /><span>Initiate 30+ warm corporate sponsor conversations using the live prospectus.</span></label></li>
+            <li><label><input type="checkbox" /><span>Film and publish 4 founder spotlight reels (Terra-Plast, BITS, SMU, Traits Toronto).</span></label></li>
+            <li><label><input type="checkbox" /><span>Host cross-faculty info session across Engineering, Science, Creative School &amp; TRSM.</span></label></li>
+          </ul>
+        </div>
+
+        <div class="phase-card blue-top">
+          <span class="phase-tag">Phase 3 &bull; Days 61&ndash;90</span>
+          <h3>Conversion &amp; Showcase</h3>
+          <div class="phase-outcome">Target: Founding annual sponsors &amp; repeatable academic playbook</div>
+          <ul class="roadmap-checklist">
+            <li><label><input type="checkbox" /><span>Close founding Title and Venture Growth partnership agreements.</span></label></li>
+            <li><label><input type="checkbox" /><span>Host sponsor-judged mock pitch night ahead of Regional/National Expositions.</span></label></li>
+            <li><label><input type="checkbox" /><span>Deliver Enactus TMU EXPO Demo Day and publish the Q1 Impact &amp; Partner Report.</span></label></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Alignment & Next Steps -->
+    <section id="alignment">
+      <div class="cta-box">
+        <div>
+          <h2>Three Decisions to Kick Off Phase 1</h2>
+          <p>
+            I believe pairing our existing Enactus TMU venture pedigree with a clean sponsorship engine and cross-faculty talent pipeline can take our chapter to a completely new level this year. I&rsquo;d love 30 minutes to walk through any piece of this together and align on immediate owners.
+          </p>
+          <button class="copy-btn" id="copy-summary-btn" onclick="copyLeadershipSummary()">
+            Copy Alignment Summary for Meeting Invite
+          </button>
+        </div>
+
+        <div class="ask-card">
+          <h4>Requested Leadership Decisions</h4>
+          <ol>
+            <li>Approve the 4-tier annual sponsorship framework so partner collateral can be finalized.</li>
+            <li>Greenlight cross-faculty recruitment &amp; founder spotlight filming alongside TMUEI staff.</li>
+            <li>Schedule a 30-minute alignment session to lock priority target accounts and Phase 1 owners.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer: Concept Designed by Emilie Faul + Powered by Chairlift -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <img
+          src="./assets/enactus-tmu-logo-white.png"
+          alt="Enactus TMU"
+          class="footer-enactus-logo"
+        />
+        <div class="footer-concept">
+          <strong>Concept Designed by Emilie Faul</strong>
+          <span>VP of Marketing, Enactus TMU &bull; Confidential Leadership Walkthrough</span>
+        </div>
+      </div>
+
+      <a
+        class="powered-by-chairlift"
+        href="https://usechairlift.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Powered by Chairlift"
+      >
+        <span>Powered by</span>
+        <!-- Real Chairlift Dark-Mode Lockup (copy logo-lockup-on-dark.png from your Chairlift assets into ./assets/) -->
+        <img
+          src="./assets/logo-lockup-on-dark.png"
+          alt="Chairlift"
+          class="chairlift-logo-img"
+        />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll Progress Bar
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? Math.min(100, (scrollTop / docHeight) * 100) : 0;
+      document.getElementById("progress-fill").style.width = pct + "%";
+    });
+
+    // Pillar Tabs
+    function switchPillar(index, btn) {
+      document.querySelectorAll(".tab-btn").forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
+      document.querySelectorAll(".pillar-panel").forEach((p) => {
+        p.classList.remove("active");
+      });
+      btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
+      document.getElementById("pillar-" + index).classList.add("active");
+    }
+
+    // Sponsorship Tier Calculator
+    const tiers = {
+      title: { price: 10000, qty: 1 },
+      venture: { price: 5000, qty: 3 },
+      competition: { price: 2500, qty: 3 },
+      community: { price: 1000, qty: 5 }
+    };
+
+    const presets = {
+      pilot: { title: 0, venture: 2, competition: 2, community: 4 },
+      target: { title: 1, venture: 3, competition: 3, community: 5 },
+      scale: { title: 2, venture: 4, competition: 4, community: 8 }
+    };
+
+    function formatCurrency(num) {
+      return "$" + num.toLocaleString("en-CA");
+    }
+
+    function applyPreset(name, btn) {
+      document.querySelectorAll(".preset-btn").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      const preset = presets[name];
+      for (const key in preset) {
+        tiers[key].qty = preset[key];
+        document.getElementById("qty-" + key).textContent = preset[key];
+      }
+      renderTotals();
+    }
+
+    function updateTier(key, delta) {
+      document.querySelectorAll(".preset-btn").forEach((b) => b.classList.remove("active"));
+      tiers[key].qty = Math.max(0, Math.min(20, tiers[key].qty + delta));
+      document.getElementById("qty-" + key).textContent = tiers[key].qty;
+      renderTotals();
+    }
+
+    function renderTotals() {
+      let total = 0;
+      let cashPartners = 0;
+      for (const key in tiers) {
+        const sub = tiers[key].price * tiers[key].qty;
+        total += sub;
+        if (key !== "community") cashPartners += tiers[key].qty;
+        document.getElementById("sub-" + key).textContent = formatCurrency(sub);
+      }
+      const communityCount = tiers.community.qty;
+      const totalPartners = cashPartners + communityCount;
+      document.getElementById("total-funding").textContent = formatCurrency(total);
+      document.getElementById("partner-count").textContent =
+        `${totalPartners} Active Partners (${cashPartners} Cash + ${communityCount} Community/In-Kind)`;
+    }
+
+    // One-Click Copy Summary for Leadership Follow-Up
+    function copyLeadershipSummary() {
+      const total = document.getElementById("total-funding").textContent;
+      const summary = [
+        "Enactus TMU Growth, Sponsorship & Impact Proposal — Concept Designed by Emilie Faul",
+        "Modeled Annual Partnership Potential: " + total,
+        "Proposed Next Steps:",
+        "1. Approve the 4-tier annual sponsorship framework",
+        "2. Greenlight cross-faculty recruitment & founder spotlight filming with TMUEI",
+        "3. Book a 30-minute alignment session to confirm priority sponsor targets & Phase 1 owners"
+      ].join("\n");
+
+      navigator.clipboard.writeText(summary).then(() => {
+        const btn = document.getElementById("copy-summary-btn");
+        btn.textContent = "Copied Summary to Clipboard";
+        setTimeout(() => {
+          btn.textContent = "Copy Alignment Summary for Meeting Invite";
+        }, 2500);
+      });
+    }
+  </script>
+</body>
+</html>
